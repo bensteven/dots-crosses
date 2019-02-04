@@ -17,3 +17,7 @@ var express = require('express')
   app.get('/result', function(req, res) {
     res.render('result')
   })
+
+  app.get('/vote', function(req, res) {
+    if (req.query.yes === "true") votes.yes++
+    else votes.no++
