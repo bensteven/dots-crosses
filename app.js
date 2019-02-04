@@ -33,3 +33,7 @@ app.get('/stream', function(req, res) {
   res.sseSend(votes)
   connections.push(res)
 })
+
+app.listen(3000, function() {
+  console.log('Listening on port 3000...')
+})
