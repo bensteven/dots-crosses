@@ -5,3 +5,5 @@ var express = require('express')
   , votes = {yes: 0, no: 0}
 
   app.engine('jade', require('jade').__express) //__
+
+  app.set('view engine', 'jade')
