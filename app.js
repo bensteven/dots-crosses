@@ -20,4 +20,8 @@ var express = require('express')
 
   app.get('/vote', function(req, res) {
     if (req.query.yes === "true") votes.yes++
-    else votes.no++
+    else votes.no++;
+
+    for(var i = 0; i < connections.length; i++) {
+      connections[i].sseSend(votes)
+    }
