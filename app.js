@@ -14,8 +14,8 @@ var express = require('express')
     res.render('vote')
   })
 
-  app.get('/result', function(req, res) {
-    res.render('result')
+  app.get('/game', function(req, res) {
+    res.render('game')
   })
 
   app.get('/vote', function(req, res) {
@@ -34,6 +34,4 @@ app.get('/stream', function(req, res) {
   connections.push(res)
 })
 
-app.listen(3000, function() {
-  console.log('Listening on port 3000...')
-})
+
