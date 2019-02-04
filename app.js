@@ -13,3 +13,7 @@ var express = require('express')
   app.get('/', function(req, res) {
     res.render('vote')
   })
+
+  app.get('/result', function(req, res) {
+    res.render('result')
+  })
