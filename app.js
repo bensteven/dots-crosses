@@ -27,3 +27,9 @@ var express = require('express')
     }
     res.sendStatus(200)
 })
+
+app.get('/stream', function(req, res) {
+  res.sseSetup()
+  res.sseSend(votes)
+  connections.push(res)
+})
