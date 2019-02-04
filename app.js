@@ -9,3 +9,7 @@ var express = require('express')
   app.set('view engine', 'jade')
 
   app.use(sse)
+
+  app.get('/', function(req, res) {
+    res.render('vote')
+  })
