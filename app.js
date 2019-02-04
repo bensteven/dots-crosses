@@ -7,3 +7,5 @@ var express = require('express')
   app.engine('jade', require('jade').__express) //__
 
   app.set('view engine', 'jade')
+
+  app.use(sse)
