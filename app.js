@@ -25,3 +25,5 @@ var express = require('express')
     for(var i = 0; i < connections.length; i++) {
       connections[i].sseSend(votes)
     }
+    res.sendStatus(200)
+})
